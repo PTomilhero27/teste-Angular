@@ -1,0 +1,74 @@
+.card-post {
+  max-width: 400px;
+  box-shadow: -3px 5px 20px 1px rgb(0 0 0 / 20%);
+  margin: 20px 1px;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.card-message-container {
+  padding: 5px 0 20px;
+}
+
+.card-message {
+  font-size: 12px;
+  width: 98%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+.seeAll {
+  white-space: break-spaces;
+}
+
+.more {
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 11px;
+}
+
+.mat-card-actions,
+.mat-button {
+  margin: 0;
+  padding: 0;
+  min-width: auto;
+  display: flex;
+}
+
+.mat-card-actions {
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.img-like {
+  margin-right: 5px;
+}
+
+.mat-card-image {
+  width: calc(100% + 32px);
+  margin: 0;
+}
+
+.mat-card-image:first-child {
+  margin: 0 0 10px;
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media (min-width: 960px) and (max-width: 1919px) {
+  .card-post {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,22 @@
+  <mat-card  class="card-post">
+    <img mat-card-image [src]="card.pic" alt="Photo of a Shiba Inu" />
+  
+  
+  
+    <mat-card-actions>
+      <button (click)="onLike(card)" mat-button><img class="img-like" [src]="like" alt="Icone de coração para representar o like">{{ card.likes }}</button>
+      <button (click)="(onShare())" mat-button><img src="../../../assets/svg/share.svg" alt="Icone compartilhar "></button>
+    
+    </mat-card-actions>
+  
+  
+    <mat-card-content class="card-message-container">
+      <p [ngClass]="{seeAll: more}" class="card-message">
+        <strong>{{ card.name }}: </strong>
+        {{ card.description }}
+      </p>
+      <button  (click)="seeMore()" class="more">{{!more ? 'ver mais' : 'ver menos' }}</button>
+    </mat-card-content>
+  
+  </mat-card>
+
